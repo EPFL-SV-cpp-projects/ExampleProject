@@ -1,4 +1,3 @@
-cmake_minimum_required ( VERSION 3.0 )
 project ( Factorial )
 add_executable (Factorial factorial.cxx )
 
@@ -8,7 +7,7 @@ find_package(GTest REQUIRED)
 include_directories(${GTEST_INCLUDE_DIRS})
 
 #link google test libraty to factorial executable
-target_link_libraries (Factorial ${GTEST_BOTH_LIBRARIES})
+target_link_libraries (Factorial ${GTEST_BOTH_LIBRARIES} pthread)
 
 #add tests
 add_test(AllTestsInFactorial Factorial)
