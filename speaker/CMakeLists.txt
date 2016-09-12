@@ -11,9 +11,11 @@ add_executable (HelloMark main2.cxx)
 target_link_libraries (HelloJohnMary Speaker)
 target_link_libraries (HelloMark Speaker)
 
-set(doxyfile ${CMAKE_CURRENT_SOURCE_DIR}/Doxyfile)
-add_custom_target(doc
-  COMMAND ${DOXYGEN_EXECUTABLE} ${doxyfile}
-  WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
-  COMMENT "Generating API documentation with Doxygen"
-  VERBATIM)
+find_package(Doxygen)
+if (DOXYGEN_FOUND)
+  add_custom_target(doc
+    ${DOXYGEN_EXECUTABLE} ${CMAKE_SOURCE_DIR}/Doxyfile
+    WORKING_DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}
+    COMMENT "Generating API documentation with Doxygen" VERBATIM)
+endif(DOXYGEN_FOUND)
+
