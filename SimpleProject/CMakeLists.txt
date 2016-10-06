@@ -14,8 +14,10 @@ add_executable(project0 src/main.cpp src/classA.cpp)
 
 if (test)
   enable_testing()
+  find_package(GTest)
+  include_directories(${GTEST_INCLUDE_DIRS})
   add_executable(project_test test/test_main.cpp src/classA.cpp)
-  target_link_libraries(project_test gtest gtest_main pthread)
+  target_link_libraries(project_test ${GTEST_BOTH_LIBRARIES} pthread)
   add_test(project0 project_test)
 endif()
 
