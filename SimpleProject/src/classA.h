@@ -14,6 +14,7 @@ public:
   This returns the *val* int. 
 */
     int value() const;
+    void set_value(int v);
 
 private:
     int val;
