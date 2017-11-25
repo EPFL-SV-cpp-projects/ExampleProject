@@ -1,6 +1,0 @@
-/home/rougemont/Documents/teaching/progCpp/2017/slides/code/ExampleProject/SimpleProject/build/CMakeFiles/test.dir
-/home/rougemont/Documents/teaching/progCpp/2017/slides/code/ExampleProject/SimpleProject/build/CMakeFiles/doc.dir
-/home/rougemont/Documents/teaching/progCpp/2017/slides/code/ExampleProject/SimpleProject/build/CMakeFiles/edit_cache.dir
-/home/rougemont/Documents/teaching/progCpp/2017/slides/code/ExampleProject/SimpleProject/build/CMakeFiles/project_test.dir
-/home/rougemont/Documents/teaching/progCpp/2017/slides/code/ExampleProject/SimpleProject/build/CMakeFiles/rebuild_cache.dir
-/home/rougemont/Documents/teaching/progCpp/2017/slides/code/ExampleProject/SimpleProject/build/CMakeFiles/project0.dir
